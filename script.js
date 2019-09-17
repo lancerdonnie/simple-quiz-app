@@ -58,7 +58,6 @@ $(
         $.ajax({
             url: "http://localhost:3000/questions",
             type: "GET",
-            async: true,
             success: (data) => {
                 tut = data
 
@@ -69,27 +68,6 @@ $(
             }
         })
 
-        function update(id){
-            $.ajax({
-                url: "http://localhost:3000/questions"+id,
-                type: "PUT",
-                async: true,
-                success: (data) => {
-                    app(data)
-                }
-            })   
-        }//put
-
-        function puttt(id,data){
-            $.ajax({
-                url: "http://localhost:3000/questions/"+id,
-                type: "PUT",
-                data:data,
-                success: () => {
-
-                }
-            })
-        }
         $list.on('click', '.remove', (e) => {
             $.ajax({
                 url: `http://localhost:3000/questions/${$(e.target).attr('data-id')}`,

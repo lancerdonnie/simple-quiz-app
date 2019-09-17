@@ -118,6 +118,7 @@
       "answer": "vvhvkb "
     },
     {
+<<<<<<< HEAD
       "question": "iwij",
       "option1": "ilne",
       "option2": "in",
@@ -125,6 +126,15 @@
       "option4": "nnlin",
       "answer": "nlnln",
       "id": 17
+=======
+      "question": "ses",
+      "option1": "fg",
+      "option2": "xfn",
+      "option3": "xb",
+      "option4": "fxbx",
+      "answer": "fxxb",
+      "id": 3
+>>>>>>> 6c0f0799228f0f0d15194a679ba7938eb704dbc8
     }
   ]
 }
