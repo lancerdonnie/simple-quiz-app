@@ -1,3 +1,20 @@
-.body{
-    background-color: blue;
+                
+/* .view {
+    background: url(back.png)no-repeat center center;
 }
+    
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+} */
+
+body {
+    background: url(back.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }

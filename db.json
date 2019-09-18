@@ -73,34 +73,7 @@
       "answer": "vvhvkb "
     },
     {
-      "id": 16,
-      "question": "hb kdb",
-      "option1": "bnubb",
-      "option2": "vvv",
-      "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
-    },
-    {
-      "id": 15,
-      "question": "hb kdb",
-      "option1": "bnubb",
-      "option2": "vvv",
-      "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
-    },
-    {
-      "id": 14,
-      "question": "hb kdb",
-      "option1": "bnubb",
-      "option2": "vvv",
-      "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
-    },
-    {
-      "id": 13,
+      "id": 11,
       "question": "hb kdb",
       "option1": "bnubb",
       "option2": "vvv",
@@ -115,26 +88,7 @@
       "option2": "vvv",
       "option3": "vjkvj,v",
       "option4": "vj,vjvv",
-      "answer": "vvhvkb "
-    },
-    {
-<<<<<<< HEAD
-      "question": "iwij",
-      "option1": "ilne",
-      "option2": "in",
-      "option3": "nilnn",
-      "option4": "nnlin",
-      "answer": "nlnln",
-      "id": 17
-=======
-      "question": "ses",
-      "option1": "fg",
-      "option2": "xfn",
-      "option3": "xb",
-      "option4": "fxbx",
-      "answer": "fxxb",
-      "id": 3
->>>>>>> 6c0f0799228f0f0d15194a679ba7938eb704dbc8
+      "answer": "vvhvkb"
     }
   ]
 }
