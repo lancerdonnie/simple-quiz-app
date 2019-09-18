@@ -18,3 +18,12 @@ body {
     background-size: cover;
     -o-background-size: cover;
   }
+  label{
+      color:darkblue;
+  }
+  #search{
+      width: 200px;
+  }
+  .hidden{
+    display:none;
+ }
