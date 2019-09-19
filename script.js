@@ -1,8 +1,8 @@
 $(
     () => {
-        var $list = $("#list")
-        var total = 0;
-        var app = function (appe, element) {
+        let $list = $("#list")
+        let total = 0;
+        let app = function (appe, element) {
             element.append(
                 `<div id="xx" style="font-family: 'Oxygen', sans-serif;">
                 <button title="Delete question" vvv="x" class="close remove btn btn-danger" aria-label="Close" data-id="${appe["id"]}">&times;</button>
@@ -19,8 +19,10 @@ $(
                 </div></br>`)
         }
 
-        $("#button4").click(() => {
-            $("#div1").empty()
+        $("body").on("click","#button4",() => {
+            $("#div1").fadeOut()(function() {
+                $(this).empty();
+             })
         })//clear
 
         $("#button3").click((e) => {
@@ -39,10 +41,11 @@ $(
                         <li>${appe["option2"]} </li>
                         <li>${appe["option3"]} </li>
                         <li>${appe["option4"]}</li>
-                        </ul></div>`)
+                        </ul></div><button id="button4" class="btn btn-primary">clear</button>`).hide().fadeIn()
                 },
                 error: (e) => {
                     alert("Please enter a valid number")
+                    $("#search").val("")
                 }
             })
         })//search

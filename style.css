@@ -44,8 +44,17 @@ body {
     margin-left: 15px;
 
   }
+  #button4{
+      margin-top:10px;
+  }
+  #sear{
+      background-color: #218838;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top:6px;
+  }
   #xx{
-    background-color:#808285;color:white;padding:10px;
+    background-color:#808285;color:white;padding:20px;
     border-radius: 5px;
     margin-right: 38px;
   }
@@ -58,7 +67,7 @@ body {
   }
 
   #search{
-      width: 200px;
+      width: 10px;
   }
   .hidden{
     display:none;
