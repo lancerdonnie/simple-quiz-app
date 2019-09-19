@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/56338c96c5.js"></script>
@@ -18,7 +19,7 @@
         <div class="card border-0 shadow my-5">
             <div class="card-body p-5">
                 <h1 class="font-weight-light text-center">WELCOME TO QUIZ APP</h1>
-                <p class="lead text-center">Welcome to my quiz app where you can answer multiple choice questions</p>
+                <p class="lead text-center">This is a quiz app where you can answer multiple choice questions</p>
                 <h3>Add a question</h3>
 
                 <div>
@@ -30,7 +31,7 @@
 
                                 <form class="form form-horizontal" role="form">
                                     <div class="form-group">
-                                        <div class="col-md-9">
+                                        <div class="col-md-5">
                                             <label>Question</label>
                                             <input type="text" class="form-control" id="question">
                                         </div>
@@ -67,10 +68,10 @@
                                         </div>
                                     </div>
                                 </form>
-                                <button id="button1" class="btn btn-primary">Submit</button>
-                                <button id="edit" class="btn btn-primary">Edit</button>
+                                <button id="button1" class="btn btn-success">Submit</button>
+                                <button id="edit" class="btn btn-secondary">Edit</button>
                                 <div class="hidden" id="upda">
-                                    <input placeholder="please enter id to load" id="id2">id</input><button id="load">load</button></br>
+                                    <input placeholder="question number here" id="id2">id</input><button id="load">load</button></br>
                                     <input id="question2">question</input></br>
                                     <input id="option12">option1</input></br>
                                     <input id="option22">option2</input> </br>
@@ -83,10 +84,8 @@
                                 </br>
                                 <p></p>
                                 <input id="search" type="text" class="form-control" placeholder=" question number?">
-
                                 <button id="button3" style="color: Dodgerblue;"><i class="fa fa-search">
                                         Search</i></button>
-                                <!-- <i class="fa fa-search" ></i> -->
                                 <div id="div1"></div>
                                 <p></p>
                                 <button id="button4" class="btn btn-primary">clear</button>
@@ -94,24 +93,24 @@
                         </div>
                     </div>
                     </br>
-                    <h2>QUIZZES</h2>
+                    <div style="margin-left: 50px">
+                    <h2 >TAKE QUIZ</h2></div>
+                </br>
                     <ul style="list-style: none;" id="list">
 
                     </ul>
 
-                    <div id="score">
-                        <button id="getscore">getscore</button>
+                    <div style="margin-bottom: 10px" class="text-center" id="score">
+                        <button class="btn btn-success"  id="getscore">getscore</button>
                     </div>
-                    <div>
-                        <button class="btn btn-danger" id="reset">RESET</button>
+                    <div class="text-center">
+                        <button class="btn btn-danger" id="reset">RESET QUIZ</button>
                     </div>
                 </div>
             </div>
-            <p class="lead mb-0">You've reached the end!</p>
         </div>
     </div>
     </div>
-
 
     <script src="jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>

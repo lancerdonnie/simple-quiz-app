@@ -2,120 +2,102 @@
   "questions": [
     {
       "id": 1,
-      "question": "alohgkydhfbguigfoiuahb",
-      "option1": "hbslfseuf",
+      "question": "Which Italian film director is considered as the father of the spaghetti western?",
+      "option1": "Sergio Leone",
       "option2": "hbslfseuf",
       "option3": "hbslfseuf",
       "option4": "hbslfseuf",
-      "answer": "2"
-    },
-    {
-      "id": 2,
-      "question": "ggggf",
-      "option1": "bnubb",
-      "option2": "vvv",
-      "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vj,vjvv"
+      "answer": "1"
     },
     {
       "id": 3,
-      "question": "hb kdb",
-      "option1": "bnubb",
+      "question": "Which famous brewer from Amsterdam did die in the year 2002?",
+      "option1": "Heineken",
       "option2": "vvv",
       "option3": "vjkvj,v",
       "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "answer": "1"
     },
     {
       "id": 4,
-      "question": "alohgkydhfbguigfoiuahb",
-      "option1": "hbslfseuf",
-      "option2": "hbslfseuf",
-      "option3": "hbslfseuf",
-      "option4": "hbslfseuf",
-      "answer": "option2"
+      "question": "What should you do in the Arab countries to show that the food was delicious?",
+      "option1": "bnubb",
+      "option2": "vvv",
+      "option3": "Belch",
+      "option4": "vj,vjvv",
+      "answer": "3"
     },
     {
       "id": 5,
-      "question": "hb kdb",
+      "question": "How many players are on each side of the net in beach volleyball?",
       "option1": "bnubb",
-      "option2": "vvv",
+      "option2": "Two players",
       "option3": "vjkvj,v",
       "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "answer": "2"
     },
     {
       "id": 6,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "option4": "Seven times",
+      "answer": "4"
     },
     {
       "id": 7,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "option4": "Seven times",
+      "answer": "4"
     },
     {
       "id": 8,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "option4": "Seven times",
+      "answer": "4"
     },
     {
       "id": 9,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "option4": "Seven times",
+      "answer": "4"
     },
     {
       "id": 10,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "option4": "Seven times",
+      "answer": "4"
     },
     {
       "id": 11,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb "
+      "option4": "Seven times",
+      "answer": "4"
     },
     {
       "id": 12,
-      "question": "hb kdb",
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
       "option1": "bnubb",
       "option2": "vvv",
       "option3": "vjkvj,v",
-      "option4": "vj,vjvv",
-      "answer": "vvhvkb"
-    },
-    {
-      "question": "segse",
-      "option1": "seseff",
-      "option2": "seffsf",
-      "option3": "ssfef",
-      "option4": "seffsfs",
-      "answer": "3",
-      "id": 13
+      "option4": "Seven times",
+      "answer": "4"
     }
   ]
 }
