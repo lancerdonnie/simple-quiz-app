@@ -9,6 +9,16 @@
       "option4": "hbslfseuf",
       "answer": "1"
     },
+    
+    {
+      "id": 2,
+      "question": "How many times has Michael Schumacher been a Formula 1 champion?",
+      "option1": "bnubb",
+      "option2": "vvv",
+      "option3": "vjkvj,v",
+      "option4": "Seven times",
+      "answer": "4"
+    },
     {
       "id": 3,
       "question": "Which famous brewer from Amsterdam did die in the year 2002?",
@@ -93,7 +103,7 @@
     {
       "id": 12,
       "question": "How many times has Michael Schumacher been a Formula 1 champion?",
-      "option1": "bnubb",
+      "option1": "five times",
       "option2": "vvv",
       "option3": "vjkvj,v",
       "option4": "Seven times",

@@ -11,6 +11,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/56338c96c5.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
             <div class="card-body p-5">
                 <h1 class="font-weight-light text-center">WELCOME TO QUIZ APP</h1>
                 <p class="lead text-center">This is a quiz app where you can answer multiple choice questions</p>
-                <h3>Add a question</h3>
+                <h2 style="font-family: 'Chilanka', cursive; font-size: 35px;margin-top: 30px">Add a question</h2>
 
                 <div>
                     <div class="container">
@@ -70,18 +72,16 @@
                                 </form>
                                 <button id="button1" class="btn btn-success">Submit</button>
                                 <button id="edit" class="btn btn-secondary">Edit</button>
-                                <div class="hidden" id="upda">
-                                    <input placeholder="question number here" id="id2">id</input><button id="load">load</button></br>
-                                    <input id="question2">question</input></br>
-                                    <input id="option12">option1</input></br>
-                                    <input id="option22">option2</input> </br>
-                                    <input id="option32">option3</input></br>
-                                    <input id="option42">option4</input></br>
-                                    <input id="answer2">answer</input></br>
-                                    <button id="button2" class="btn btn-primary">update</button>
-
+                                <div class="form-group hidden" id="upda">
+                                    <input placeholder="question number here" id="id2"></input><button  class="btn btn-warning" id="load">load</button></br>
+                                    <label style="text-align: right;" for="question2">Question</label><input style="display: inline;" class="form-control form-control-sm " id="question2"></input></br>
+                                    <label style="text-align: right;" for="question2">Option1</label><input style="display: inline;margin-left:11px" class="form-control form-control-sm " id="option12"></input></br>
+                                    <label style="text-align: right;" for="question2">Option2</label><input style="display: inline;margin-left:11px" class="form-control form-control-sm "  id="option22"></input> </br>
+                                    <label style="text-align: right;" for="question2">Option3</label><input style="display: inline;margin-left:11px" class="form-control form-control-sm " id="option32"></input></br>
+                                    <label style="text-align: right;" for="question2">Option4</label><input style="display: inline;margin-left:11px" class="form-control form-control-sm "id="option42"></input></br>
+                                    <label style="text-align: right;" for="question2">Answer</label><input style="display: inline;margin-left:11px" class="form-control form-control-sm " id="answer2"></input></br>
+                                    <button style="margin-left:60px;" id="button2" class="btn btn-primary">update</button>
                                 </div>
-                                </br>
                                 <p></p>
                                 <input id="search" type="text" class="form-control" placeholder=" question number?">
                                 <button id="button3" style="color: Dodgerblue;"><i class="fa fa-search">
@@ -94,8 +94,7 @@
                     </div>
                     </br>
                     <div style="margin-left: 50px">
-                    <h2 >TAKE QUIZ</h2></div>
-                </br>
+                    <h2 style="font-family: 'Chilanka', cursive; font-size: 35px;margin-top: 20px;margin-bottom: 20px;">Take Quiz</h2></div>
                     <ul style="list-style: none;" id="list">
 
                     </ul>

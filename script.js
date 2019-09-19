@@ -4,9 +4,9 @@ $(
         var total = 0;
         var app = function (appe, element) {
             element.append(
-                `
-                <div  id="xx">
-                <p class="text-justify def${appe["id"]}">${appe["id"]}. ${appe["question"]}</p><button style="float:right;display:flex" vvv="x" class="remove btn btn-danger" data-id="${appe["id"]}">X</button>
+                `<div id="xx" style="font-family: 'Oxygen', sans-serif;">
+                <button title="Delete question" vvv="x" class="close remove btn btn-danger" aria-label="Close" data-id="${appe["id"]}">&times;</button>
+                <p class="text-justify def${appe["id"]}">${appe["id"]}. ${appe["question"]}</p>
                 <li><input class="form-radio" id="radio1" name="radio${appe["id"]}" anss="${appe["answer"]}" type="radio" value="1"></input>
                 <label for="radio1">${appe["option1"]}</label></li>
                 <li><input class="form-radio" id="radio2" name="radio${appe["id"]}" anss="${appe["answer"]}" type="radio" value="2"></input>
@@ -15,7 +15,6 @@ $(
                 <label for="radio3">${appe["option3"]}</label></li>
                 <li><input class="form-radio" id="radio4" name="radio${appe["id"]}" anss="${appe["answer"]}" type="radio" value="4"></input>
                 <label  for="radio4">${appe["option4"]}</label></li>
-                
                 <button style="margin-top: 7px;" class="ans btn btn-dark" daid="${appe["id"]}">answer</button>
                 </div></br>`)
         }
@@ -34,12 +33,13 @@ $(
                 success: (appe) => {
                     $("#search").val("")
                     $("#div1").append(
-                        `<li class="def${appe["id"]}">${appe["id"]})  ${appe["question"]}
-                        <input id="radio1" name="radio${appe["id"]}" type="radio" value="on">${appe["option1"]}</input> 
-                        <input id="radio2" name="radio${appe["id"]}" type="radio" value="on">${appe["option2"]}</input> 
-                        <input id="radio3" name="radio${appe["id"]}" type="radio" value="on">${appe["option3"]}</input> 
-                        <input id="radio4" name="radio${appe["id"]}" type="radio" value="on">${appe["option4"]}</input>
-                        </li>`)
+                        `<div id="sear"><p  class="def${appe["id"]}">${appe["id"]})  ${appe["question"]}</p>
+                        <ul >
+                        <li>${appe["option1"]}</li> 
+                        <li>${appe["option2"]} </li>
+                        <li>${appe["option3"]} </li>
+                        <li>${appe["option4"]}</li>
+                        </ul></div>`)
                 },
                 error: (e) => {
                     alert("Please enter a valid number")
@@ -47,7 +47,9 @@ $(
             })
         })//search
         $("#edit").click(() => {
-            $("#upda").toggleClass("hidden")
+            // $("#upda").toggleClass("hidden")
+            $("#upda").slideToggle("hidden","linear")
+
         })//edit toggle
         $("#load").click(() => {
             let id = $("#id2").val()
@@ -61,7 +63,7 @@ $(
                     $("#option22").val(data.option2)
                     $("#option32").val(data.option3)
                     $("#option42").val(data.option4)
-                    $("#answer2").val(data.option4)
+                    $("#answer2").val(data.answer)
                 },
                 error:()=>{
                     alert("Please enter a valid number")
@@ -157,15 +159,17 @@ $(
         })//show answerS
 
         $("#getscore").click(() => {
+
             var $q = $("body #xx input[type='radio']:checked")
+            var count=$("body #xx").length
             $.each($q, (x, y) => {
                 if ($(y).attr("value") == $(y).attr("anss")) {
                     total++
                 }
             })
-            $("#score").append(`<div><p style="background-color:#808285;display: inline;color:white"> Your total score is ${total}</p></div>`)
+            $("#score").append(`<div><p style="background-color:#808285;display: inline;color:white"> Your total score is ${total} out of ${count}</p></div>`)
         })
-01
+
         $("#reset").click(() => {
             reloadQue()
         })//reset
