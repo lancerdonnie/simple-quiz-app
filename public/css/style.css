@@ -12,12 +12,17 @@
 } */
 
 body {
-    background: url(back.jpg) no-repeat center center fixed;
+    background: url(/assets/back.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
   }
+  #particles-js{
+      background-color: #231F20;
+      height:100%
+  }
+  
   .remove{
       color:red;
       background-color:white;
@@ -44,10 +49,17 @@ body {
     margin-left: 15px;
 
   }
+  #button3{
+    color: white;display: inline;background-color: dodgerblue;background: url(assets/search.png) no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+
+  }
   #edit{
       min-width: 77px;
       /* float: right; */
-      margin-left: 47px;
+      margin-left: 62px;
   }
   #button4{
       margin-top:10px;

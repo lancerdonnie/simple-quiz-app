@@ -13,14 +13,15 @@ $(
                             $("#intru").hide()
                             $("#flap").prepend(`<p id="pre" class="text-center"><span  style="color:blue;">You are logged in as ${e.username}<span></p>`)
                             $("#que").show()
-                            // someone=true
+                            return;
                         }
                         else {
-                            $("#que").hide()
+                            
                         }
                     })
                 }
             })//on refresh
+            $("#que").hide()
         }
         let $list = $("#list")
         let total = 0;
@@ -284,6 +285,7 @@ $(
                                     $("#loginb").show()
                                     $("#rregister").show()
                                     $("#intru").show()
+                                    // $("#que").hide()
                                 }
                             })
                         }
