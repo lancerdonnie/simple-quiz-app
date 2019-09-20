@@ -1,4 +1,24 @@
 {
+  "users": [
+    {
+      "id": 1,
+      "username": "jide",
+      "password": "adedeji",
+      "logged": "false"
+    },
+    {
+      "username": "mulis",
+      "password": "bower",
+      "id": 2,
+      "logged": "false"
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "id": 3,
+      "logged": "true",
+    }
+  ],
   "questions": [
     {
       "id": 1,
@@ -9,7 +29,6 @@
       "option4": "hbslfseuf",
       "answer": "1"
     },
-    
     {
       "id": 2,
       "question": "How many times has Michael Schumacher been a Formula 1 champion?",

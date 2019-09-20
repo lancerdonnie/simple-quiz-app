@@ -1,12 +1,34 @@
 $(
     () => {
+        loader()
+        function loader() {
+            $.ajax({
+                url: "http://localhost:3000/users",
+                type: "GET",
+                success: (data) => {
+                    $.each(data, (i, e) => {
+                        if (e.logged == "true") {
+                            $("#loginb").hide()
+                            $("#rregister").hide()
+                            $("#intru").hide()
+                            $("#flap").prepend(`<p id="pre" class="text-center"><span  style="color:blue;">You are logged in as ${e.username}<span></p>`)
+                            $("#que").show()
+                            // someone=true
+                        }
+                        else {
+                            $("#que").hide()
+                        }
+                    })
+                }
+            })//on refresh
+        }
         let $list = $("#list")
         let total = 0;
         let app = function (appe, element) {
             element.append(
                 `<div id="xx" style="font-family: 'Oxygen', sans-serif;">
                 <button title="Delete question" vvv="x" class="close remove btn btn-danger" aria-label="Close" data-id="${appe["id"]}">&times;</button>
-                <p class="text-justify def${appe["id"]}">${appe["id"]}. ${appe["question"]}</p>
+                <p style="font-size:19px;" class="text-justify def${appe["id"]}">${appe["id"]}. ${appe["question"]}</p>
                 <li><input class="form-radio" id="radio1" name="radio${appe["id"]}" anss="${appe["answer"]}" type="radio" value="1"></input>
                 <label for="radio1">${appe["option1"]}</label></li>
                 <li><input class="form-radio" id="radio2" name="radio${appe["id"]}" anss="${appe["answer"]}" type="radio" value="2"></input>
@@ -19,10 +41,10 @@ $(
                 </div></br>`)
         }
 
-        $("body").on("click","#button4",() => {
-            $("#div1").fadeOut()(function() {
+        $("body").on("click", "#button4", () => {
+            $("#div1").fadeOut()(function () {
                 $(this).empty();
-             })
+            })
         })//clear
 
         $("#button3").click((e) => {
@@ -51,7 +73,7 @@ $(
         })//search
         $("#edit").click(() => {
             // $("#upda").toggleClass("hidden")
-            $("#upda").slideToggle("hidden","linear")
+            $("#upda").slideToggle("hidden", "linear")
 
         })//edit toggle
         $("#load").click(() => {
@@ -68,7 +90,7 @@ $(
                     $("#option42").val(data.option4)
                     $("#answer2").val(data.answer)
                 },
-                error:()=>{
+                error: () => {
                     alert("Please enter a valid number")
                     $("#id2").val("")
                 }
@@ -164,13 +186,18 @@ $(
         $("#getscore").click(() => {
 
             var $q = $("body #xx input[type='radio']:checked")
-            var count=$("body #xx").length
+            var count = $("body #xx").length
             $.each($q, (x, y) => {
                 if ($(y).attr("value") == $(y).attr("anss")) {
                     total++
                 }
             })
-            $("#score").append(`<div><p style="background-color:#808285;display: inline;color:white"> Your total score is ${total} out of ${count}</p></div>`)
+            if (total < count / 2) {
+                $("#score").append(`<div><p style="background-color:#808285;display: inline;color:white"> Your total score is ${total} out of ${count}. You can do better</p></div>`)
+
+            } else {
+                $("#score").append(`<div><p style="background-color:#808285;display: inline;color:white"> Your total score is ${total} out of ${count}. You can did well</p></div>`)
+            }
         })
 
         $("#reset").click(() => {
@@ -189,6 +216,82 @@ $(
                 }
             })
         }
+        $("#reallogin").click(() => {
+            var u = $("#uname").val()
+            var p = $("#pword").val()
+            $.ajax({
+                url: "http://localhost:3000/users",
+                type: "GET",
+                success: (data) => {
+                    $.each(data, (i, e) => {
+                        if (u == e.username && p == e.password) {
 
+                            $.ajax({
+                                url: `http://localhost:3000/users/${e.id}`,
+                                type: "PATCH",
+                                data: { logged: "true" },
+                                success: () => {
+                                    console.log("worked")
+                                    someone = true
+                                    $("#loginb").hide()
+                                    $("#rregister").hide()
+                                    $("#intru").hide()
+                                    $("#flap").prepend(`<p class="text-center"><span  style="color:blue;">You are logged in as ${e.username}<span></p>`)
+                                    $("#que").show()
+                                }
+                            })
+                        }
+                    })
+                },
+                error: () => {
+                    $("#reallogin").removeAttr("data-dismiss")
+                    alert("Wrong username/password")
+                }
+            })
+        })//login
+        $("#reg").click(() => {
+            if (!$("#runame").val() || !$("#rpword").val()) {
+                alert("You need a username and password to register")
+                $("#reg").removeAttr("data-dismiss")
+            }
+            var obj = {
+                username: $("#runame").val(),
+                password: $("#rpword").val()
+            }
+            $.ajax({
+                url: "http://localhost:3000/users",
+                type: "POST",
+                data: obj,
+                success: (data) => {
+                    alert(`You have successfully registered ${data.username}`)
+                }
+            })
+        })//register
+        $("#logout").click(() => {
+            $.ajax({
+                url: `http://localhost:3000/users`,
+                type: "GET",
+                success: (data) => {
+                    $.each(data, (e, g) => {
+                        if (g.logged == "true") {
+                            $.ajax({
+                                url: `http://localhost:3000/users/${g.id}`,
+                                type: "PATCH",
+                                data: { logged: "false" },
+                                success: () => {
+                                    $("#pre").empty()
+                                    $("#flap").hide()
+                                    $("#loginb").show()
+                                    $("#rregister").show()
+                                    $("#intru").show()
+                                }
+                            })
+                        }
+                    })
+                }
+
+            })
+
+        })
     }
 )

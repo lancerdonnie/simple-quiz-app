@@ -44,6 +44,11 @@ body {
     margin-left: 15px;
 
   }
+  #edit{
+      min-width: 77px;
+      /* float: right; */
+      margin-left: 47px;
+  }
   #button4{
       margin-top:10px;
   }
@@ -54,7 +59,10 @@ body {
       margin-top:6px;
   }
   #xx{
-    background-color:#808285;color:white;padding:20px;
+    /* background-color:#808285; */
+    background-color:#231F20;
+    color:white;
+    padding:20px;
     border-radius: 5px;
     margin-right: 38px;
   }
@@ -63,7 +71,8 @@ body {
   }
   
   #xx label{
-      color:#1A2026;
+      /* color:#1A2026; */
+      color: white;
   }
 
   #search{
