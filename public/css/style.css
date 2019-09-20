@@ -20,7 +20,7 @@ body {
   }
   #particles-js{
       background-color: #231F20;
-      height:100%
+      /* height:100% */
   }
   
   .remove{

@@ -12,11 +12,8 @@ $(
                             $("#rregister").hide()
                             $("#intru").hide()
                             $("#flap").prepend(`<p id="pre" class="text-center"><span  style="color:blue;">You are logged in as ${e.username}<span></p>`)
+                            $("#flap").show()
                             $("#que").show()
-                            return;
-                        }
-                        else {
-                            
                         }
                     })
                 }
@@ -238,6 +235,7 @@ $(
                                     $("#rregister").hide()
                                     $("#intru").hide()
                                     $("#flap").prepend(`<p class="text-center"><span  style="color:blue;">You are logged in as ${e.username}<span></p>`)
+                                    $("#flap").show()
                                     $("#que").show()
                                 }
                             })
